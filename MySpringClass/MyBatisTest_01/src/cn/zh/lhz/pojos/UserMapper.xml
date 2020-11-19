@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!--  XML 配置文件包含对 MyBatis 系统的核心设置 -->
+<mapper namespace="cn.zh.lhz.pojos.UserMapper">
+	<insert id="save" parameterType="cn.zh.lhz.pojos.User" useGeneratedKeys="true">
+		insert into t_user(name,sex,age) values(#{name},#{sex},#{age})
+	</insert>
+</mapper>
