@@ -1,0 +1,2 @@
+前端企业官方响应式网页代码，Grid布局。
+应用js库有anime、glide、isotope、scrollReveal和smooth-scroll以实现网页的动态展示。
