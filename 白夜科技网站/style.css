@@ -1,3 +1,5 @@
+﻿
+
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +24,7 @@ img{
 
 }
 header{
-    width: 100vw;
+    width: 100%;
     height: 60px;
     display: grid;/*栅格布局*/
     grid-template-columns: 1fr 2fr;
@@ -82,8 +84,8 @@ header.sticky nav i{
 }
 
 .glide__slide img,.glide__slide video{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;/*等比例的缩放*/
 }
 
@@ -92,7 +94,7 @@ header.sticky nav i{
     z-index: 70;
     color: var(--text-color-lightest);
     text-align: center;
-    max-width: 60vw;/*60vw表示占比60%*/
+    max-width: 60%;/*60%表示占比60%*/
 }
 
 .glide__slide{
@@ -110,7 +112,7 @@ header.sticky nav i{
     margin: 48px 0;
 }
 .slide-caption.left{
-    max-width: 80vw;
+    max-width: 80%;
     text-align: left;
 }
 
@@ -184,7 +186,7 @@ section{
     display: block;
     position: absolute;
     background-color: #f9fbfb;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     z-index: -1;
 }
@@ -217,7 +219,7 @@ section{
     display: grid;
     grid-template-columns: repeat(3,1fr);/*grid的3列布局,repeat(3,1fr)其中3是重复3次，1fr是重复的位置；此处也可以写成1fr 1fr 1fr*/
     grid-template-rows: 126px 126px; /* grid的2行布局*/
-    column-gap: 5vw; /*列之间的间隙*/
+    column-gap: 5%; /*列之间的间隙*/
 }
 .feature{
     display: grid;
@@ -274,11 +276,11 @@ section{
 }
 
 .showcases .cases{
-    width: 100vw;
+    width: 100%;
 }
 .showcases .case-item{
-    width: 25vw;
-    height: 20vw;
+    width: 25%;
+    height: 20%;
     overflow: hidden; /*缩放时超出的部分不可见*/
 }
 
@@ -399,7 +401,7 @@ section{
     height: 255px;
     display: grid;
     grid-template-columns: repeat(4,minmax(auto,220px));
-    width: 100vw;
+    width: 100%;
     background-image: url("images/adult-business-computer-contemporary-380769.jpg");
     background-size: cover;
     background-position: center;
@@ -624,7 +626,7 @@ footer{
         position: absolute;
         left: 0;
         top: 0;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         background-color: white;
         grid-auto-rows: max-content;
@@ -702,7 +704,7 @@ footer{
     .team-members{
         grid-template-columns: repeat(2,1fr);
         row-gap: 36px;
-        column-gap: 6vw;/* vw是浮动的 */
+        column-gap: 6%;/* %是浮动的 */
     }
     .activities{
         grid-template-columns: repeat(2,1fr);
@@ -731,7 +733,7 @@ footer{
         background-size: 200%;
     }
     .showcases .case-item{
-        width: calc(100vw/3);
+        width: calc(100%/3);
     }
 }
 @media(max-width:768px){
@@ -762,8 +764,8 @@ footer{
         grid-template-columns: 1fr;
     }
     .showcases .case-item{
-        width: calc(100vw/2);
-        height: 30vw;
+        width: calc(100%/2);
+        height: 30%;
     }
 }
 
@@ -779,8 +781,8 @@ footer{
         padding: 8px 18px;
     }
     .showcases .case-item{
-        width: 100vw;
-        height: 60vw;
+        width: 100%;
+        height: 60%;
     }
     .footer-menus{
         grid-template-columns: 1fr;
